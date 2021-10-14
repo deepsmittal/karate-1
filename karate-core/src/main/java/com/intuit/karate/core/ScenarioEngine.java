@@ -480,6 +480,7 @@ public class ScenarioEngine {
         } else if (value instanceof String) {
             map.put("value", (String) value);
             multiPartInternal(name, map);
+            multiPartInternal("value", value);
         } else if (value instanceof List) {
             List list = (List) value;
             for (Object o : list) {
